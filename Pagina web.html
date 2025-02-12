@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día Internacional de Internet Seguro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(45deg, #111, #222);
+            color: #f5f5f5;
+            line-height: 1.8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-bottom: 4px solid #ff7e5f;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        nav {
+            position: fixed;
+            left: -250px;
+            top: 0;
+            height: 100%;
+            width: 250px;
+            background: #333;
+            overflow-y: auto;
+            transition: 0.3s;
+            padding-top: 60px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+            border-right: 1px solid #444;
+        }
+
+        nav a {
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #575757;
+        }
+
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 2em;
+            cursor: pointer;
+            color: #fff;
+            z-index: 999;
+        }
+
+        nav.active {
+            left: 0;
+        }
+
+        main {
+            margin-left: 0;
+            padding: 20px;
+            transition: margin-left 0.3s;
+        }
+
+        nav.active ~ main {
+            margin-left: 250px;
+        }
+
+        section {
+            margin: 0 auto 40px auto;
+            padding: 20px;
+            background: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+            color: #ff7e5f;
+        }
+
+        section p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        section img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.1em;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <input type="checkbox" id="menuToggle">
+    <label class="menu-btn" for="menuToggle">☰</label>
+
+    <nav id="menu">
+        <a href="#introduccion">Introducción</a>
+        <a href="#contraseñas">Contraseñas seguras</a>
+        <a href="#seguridad-dispositivos">Seguridad de dispositivos</a>
+        <a href="#ciberseguridad-trabajo">Ciberseguridad en el trabajo</a>
+        <a href="#phishing">Phishing y fraudes</a>
+        <a href="#proteccion-infantil">Protección infantil</a>
+    </nav>
+
+    <header>
+        <h1>Día Internacional de Internet Seguro</h1>
+    </header>
+
+    <main>
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>En el Día Internacional de Internet Seguro, es crucial recordar la importancia de mantenernos protegidos mientras navegamos en línea. Aquí exploraremos algunas de las mejores prácticas para tener una experiencia más segura en la web.</p>
+        </section>
+
+        <section id="contraseñas">
+            <h2>Contraseñas seguras</h2>
+            <p>Usa contraseñas largas y complejas que incluyan letras mayúsculas, minúsculas, números y caracteres especiales. Cambia tus contraseñas regularmente y considera el uso de un gestor de contraseñas.</p>
+            <img src="https://blog.udlap.mx/wp-content/uploads/2020/08/contrasena-.jpg" alt="Ejemplo de contraseña segura">
+        </section>
+
+        <section id="seguridad-dispositivos">
+            <h2>Seguridad de dispositivos</h2>
+            <p>Configura un código de acceso en tus dispositivos y activa la autenticación en dos pasos. Descarga aplicaciones solo de fuentes confiables para evitar posibles amenazas.</p>
+            <img src="https://web-assets.esetstatic.com/wls/2018/08/seguridad-dispositivos-moviles-primer-semestre-2018.jpg" alt="Ejemplo de seguridad en dispositivos móviles">
+        </section>
+
+        <section id="ciberseguridad-trabajo">
+            <h2>Ciberseguridad en el trabajo</h2>
+            <p>En tu entorno laboral, asegúrate de usar contraseñas seguras, redes privadas y educa a tus compañeros sobre cómo identificar posibles fraudes o correos electrónicos fraudulentos.</p>
+            <img src="https://www.ceupe.com/images/easyblog_articles/1633/b2ap3_amp_especialista-ciberseguridad.jpg" alt="Ejemplo de ciberseguridad en el trabajo">
+        </section>
+
+        <section id="phishing">
+            <h2>Phishing y fraudes en línea</h2>
+            <p>El phishing es una técnica común de fraude donde los atacantes se hacen pasar por entidades legítimas. Nunca hagas clic en enlaces sospechosos ni compartas tu información personal por medios no seguros.</p>
+        </section>
+
+        <section id="proteccion-infantil">
+            <h2>Protección infantil en internet</h2>
+            <p>Los niños y adolescentes son especialmente vulnerables en línea. Enseña a tus hijos sobre los riesgos en internet, establece reglas claras y supervisa sus actividades en línea.</p>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('menu');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
